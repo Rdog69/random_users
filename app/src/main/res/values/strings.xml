@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UserGenerator</string>
+    <string name="textview">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="reload">Reload</string>
+    <string name="try_reloading">Try reloading\n</string>
+    <string name="something_went_wrong">something went wrong :/</string>
+    <string name="users">Users</string>
+    <string name="saved">Saved</string>
+    <string name="settings">Settings</string>
+    <string name="empty_description">Save a random user and it \n will show up here.</string>
+    <string name="wow_such_empty">Wow such empty!</string>
+    <string name="share" translatable="false">I really like this app! Get It for FREE at https://play.google.com/store/apps/details?id=%1$s </string>
+
+</resources>

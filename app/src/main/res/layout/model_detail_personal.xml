@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="FullName"
+        android:textColor="#787878"
+        app:layout_constraintStart_toStartOf="@+id/llFull"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llFull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke_bg"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/full_name">
+
+
+        <TextView
+            android:id="@+id/actual_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Mia James" />
+
+        <ImageView
+            android:id="@+id/copy_full_name"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/copy"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/username_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Username"
+        android:textColor="#787878"
+        app:layout_constraintBottom_toTopOf="@id/llUser"
+        app:layout_constraintStart_toStartOf="@+id/llUser"
+        app:layout_constraintTop_toBottomOf="@id/llFull" />
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/stroke_bg"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@id/llPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_txt"
+        >
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/actual_username"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="yellowpeacock23" />
+
+        <ImageView
+            android:id="@+id/copy_user_name"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/copy" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/password_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="1dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Password"
+        android:textColor="#787878"
+        app:layout_constraintBottom_toTopOf="@+id/llPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/llPassword"
+        app:layout_constraintTop_toBottomOf="@id/llFull" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/stroke_bg"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/llUser"
+        app:layout_constraintTop_toBottomOf="@id/password_txt"
+        >
+
+
+        <TextView
+            android:id="@+id/actual_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="vegito" />
+
+        <ImageView
+            android:id="@+id/copy_password"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/copy" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/age_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Age"
+        android:textColor="#787878"
+        app:layout_constraintStart_toStartOf="@+id/llAge"
+        app:layout_constraintBottom_toTopOf="@id/llAge"
+        app:layout_constraintTop_toBottomOf="@id/llUser" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/stroke_bg"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@id/llDateOfBirth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age_txt"
+        >
+
+
+        <TextView
+            android:id="@+id/actual_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="33" />
+
+        <ImageView
+            android:id="@+id/copy_age"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/copy" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:id="@+id/dob_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="1dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Date of birth"
+        android:textColor="#787878"
+        app:layout_constraintBottom_toTopOf="@+id/llDateOfBirth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/llDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@id/llPassword" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llDateOfBirth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/stroke_bg"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/llAge"
+        app:layout_constraintTop_toBottomOf="@id/dob_txt"
+        >
+
+
+        <TextView
+            android:id="@+id/actual_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="15/12/2006" />
+
+        <ImageView
+            android:id="@+id/copy_dob"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/copy" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

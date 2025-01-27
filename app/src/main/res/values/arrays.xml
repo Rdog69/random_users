@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_entries">
+        <item>Both</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="gender_values">
+        <item>both</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <string-array name="country_entries">
+        <item>Australia</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>Switzerland</item>
+        <item>Germany</item>
+        <item>Denmark</item>
+        <item>Spain</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>United Kingdom</item>
+        <item>Ireland</item>
+        <item>India</item>
+        <item>Iran</item>
+        <item>Mexico</item>
+        <item>Netherlands</item>
+        <item>Norway</item>
+        <item>New Zealand</item>
+        <item>Serbia</item>
+        <item>Turkey</item>
+        <item>Ukraine</item>
+        <item>United States</item>
+    </string-array>
+
+    <string-array name="country_values">
+        <item>AU</item>
+        <item>BR</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>IE</item>
+        <item>IN</item>
+        <item>IR</item>
+        <item>MX</item>
+        <item>NL</item>
+        <item>NO</item>
+        <item>NZ</item>
+        <item>RS</item>
+        <item>TR</item>
+        <item>UA</item>
+        <item>US</item>
+    </string-array>
+
+</resources>

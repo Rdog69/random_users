@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:title="Filters"
+        app:key="filters_category">
+
+        <MultiSelectListPreference
+            app:key="countries"
+            app:title="Countries"
+            app:icon="@drawable/countries"
+            app:summary="Select preferred countries for localized content"
+            app:entries="@array/country_entries"
+            app:entryValues="@array/country_values"/>
+        <ListPreference
+            app:key="gender"
+            app:title="Gender"
+            app:icon="@drawable/gender"
+            app:summary="Choose content based on gender preferences"
+            app:entries="@array/gender_entries"
+            app:entryValues="@array/gender_values"
+            app:defaultValue="both" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Functionality"
+        app:key="functionality_category">
+
+        <Preference
+            app:key="export"
+            app:icon="@drawable/export"
+            app:title="Export Favorites"
+            app:summary="Export your favorite items as a CSV file"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="App Information"
+        app:key="app_info_category"
+      >
+
+        <Preference
+            app:key="rate_us"
+            app:title="Rate Us"
+            app:icon="@drawable/rate_us"
+            app:summary="Rate the app and provide feedback on your experience"/>
+
+        <Preference
+            app:key="privacy_policy"
+            app:icon="@drawable/privacy"
+            app:title="Privacy Policy"
+            app:summary="Review our privacy policy"/>
+
+        <Preference
+            app:key="feedback"
+            app:title="Send Feedback"
+            app:icon="@drawable/feedback"
+            app:summary="Report technical issues or suggest new features"/>
+
+        <Preference
+            app:key="share"
+            app:icon="@drawable/about"
+            app:title="Share"
+            app:summary="Share the app with your friend!"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
